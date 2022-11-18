@@ -55,6 +55,7 @@ muteButton.addEventListener('click', function(){
 
 var slider = document.getElementById("slider");
 var vol = document.getElementById("volume");
+vol.textContent = "100%";
 slider.addEventListener('input', function(){
     vid.volume = slider.value / 100;
     vol.textContent = vid.volume*100+"%";
